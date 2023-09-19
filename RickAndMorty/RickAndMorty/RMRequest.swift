@@ -17,13 +17,17 @@ final class RMRequest {
     //type: filter by the given type.
     //gender: filter by the given gender (female, male, genderless or unknown).
     
+    
+    /// API Constants
     private struct Constants {
         static let baseUrl = "https://rickandmortyapi.com/api"
     }
     
+    /// Desired endpoint
    private let endpoint: RMEndpoint
     
-    private  let pathComponents: [String]
+    ///path components for API
+    private  let pathComponents: Set<String>
     
     private let queryParameters: [URLQueryItem]
     
@@ -43,23 +47,33 @@ final class RMRequest {
             string += "?"
             let argumentString = queryParameters.compactMap({
                 guard let value = $0.value else { return nil }
-                return "\($0.name) = \(value)"
+                return "\($0.name)=\(value)"
             }).joined(separator: "&")
             
             string += argumentString
         }
         
         return string
+        
+        
     }
     
+    /// Computed & constructed API url
     public var url: URL? {
         return URL(string: urlString)
     }
     
+    ///Desired method
+    public let httpMethod = "GET"
     
+    /// Construct request
+    /// PARAMETERS:
+    /// -- endpoint: Target endpoint
+    /// -- pathComponentes: Collection or Path components
+    /// -- queryParameters: Collection of query parameters
     public init(
         endpoint: RMEndpoint,
-        pathComponents: [String] = [],
+        pathComponents: Set<String> = [],
         queryParameters: [URLQueryItem] = []
     ){
         self.endpoint = endpoint
