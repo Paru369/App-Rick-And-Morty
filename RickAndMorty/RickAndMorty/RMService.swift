@@ -18,6 +18,10 @@ final class RMService {
     private init() {
         
     }
+    
+    enum RMServiceError: Error {
+        case failedToRequest
+    }
     /// Send Rick and Morty API Call
     ///  - Parameters:
     ///  -- request: Request instance
@@ -28,7 +32,38 @@ final class RMService {
         expecting type: T.Type,
         completion: @escaping (Result<T, Error>) -> Void
     ) {
+        guard let urlRequest = self.request(from: request) else {
+            completion(.failure(RMServiceError.failedToRequest))
+            return
+            
+        }
         
+        let task = URLSession.shared.dataTask(with: urlRequest) { data, _, error in
+            guard let data = data, error == nil else {
+                completion(.failure(error ?? RMServiceError.failedToRequest))
+                return
+            }
+            
+            /// Decode reponse
+            do {
+                let result = try JSONSerialization.jsonObject(with: data, options: [.fragmentsAllowed])
+              //  completion(.success(result))
+                 //   print("++++ \(result)")
+            }
+            catch {
+                completion(.failure(error))
+            }
+            
+        }
+        
+        task.resume()
+    }
+    
+    private func request(from rmRequest: RMRequest) -> URLRequest? {
+        guard let url = rmRequest.url else { return nil }
+        var request = URLRequest(url: url)
+        request.httpMethod = rmRequest.httpMethod
+        return request
     }
 
 }
