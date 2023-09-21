@@ -18,11 +18,13 @@ final class RMCharacterViewController: UIViewController {
         
         RMService.shared.execute(.listCharactersRquest,
                                  expecting: String.self) { result in
+            print(result)
             switch result {
             case .success(let model):
                 print(String(describing: model))
             case .failure(let error):
-                print(String(describing: error))
+             print("888")
+                //print(String(describing: error))
 
             }
         }
