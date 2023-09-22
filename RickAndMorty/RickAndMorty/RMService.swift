@@ -52,12 +52,11 @@ final class RMService {
             do {
                 
                 let result = try JSONDecoder().decode(type.self, from: data)
-                print("++++ \(result)")
                 completion(.success(result))
                  
             }
             catch {
-                print("++++ \(error)")
+
                 completion(.failure(error))
             }
             
@@ -70,7 +69,7 @@ final class RMService {
         guard let url = rmRequest.url else { return nil }
         var request = URLRequest(url: url)
         request.httpMethod = rmRequest.httpMethod
-        //print(request)
+
         return request
     }
 
