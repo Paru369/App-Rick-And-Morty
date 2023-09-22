@@ -14,6 +14,8 @@ final class RMService {
     /// Shared sigleton instace
     static let shared = RMService()
     
+    private let cacheManager = RMAPICacheManager()
+    
     /// Privatized construtctor
     private init() {
         
@@ -21,6 +23,7 @@ final class RMService {
     
     enum RMServiceError: Error {
         case failedToRequest
+        case failedToGetData
     }
     /// Send Rick and Morty API Call
     ///  - Parameters:
@@ -32,29 +35,28 @@ final class RMService {
            expecting type: T.Type,
            completion: @escaping (Result<T, Error>) -> Void
        ) {
+           
         guard let urlRequest = self.request(from: request) else {
             completion(.failure(RMServiceError.failedToRequest))
             return
             
         }
         
-        let task = URLSession.shared.dataTask(with: urlRequest) { data, _, error in
-            guard let data = data, error == nil else {
-                completion(.failure(error ?? RMServiceError.failedToRequest))
-                print("++++")
-                return
+           let task = URLSession.shared.dataTask(with: urlRequest) { [weak self] data, _, error in
+                 guard let data = data, error == nil else {
+                     completion(.failure(error ?? RMServiceError.failedToGetData))
+                     return
             }
             
             /// Decode reponse
             do {
                 
                 let result = try JSONDecoder().decode(type.self, from: data)
-                print("++++ \(result)")
                 completion(.success(result))
                  
             }
             catch {
-                print("++++ \(error)")
+
                 completion(.failure(error))
             }
             
@@ -67,7 +69,7 @@ final class RMService {
         guard let url = rmRequest.url else { return nil }
         var request = URLRequest(url: url)
         request.httpMethod = rmRequest.httpMethod
-        //print(request)
+
         return request
     }
 
