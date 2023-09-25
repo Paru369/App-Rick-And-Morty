@@ -1,5 +1,5 @@
 //
-//  CharacterListView.swift
+//  RMCharacterListView.swift
 //  RickAndMorty
 //
 //  Created by Paulo Pinheiro on 9/21/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 /// View that handles showing list of characters, loader, etc
-class CharacterListView: UIView {
+class RMCharacterListView: UIView {
 
         private let viewModel = RMCharacterListViewViewModel()
     
