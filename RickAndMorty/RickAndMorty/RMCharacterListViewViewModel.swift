@@ -41,7 +41,7 @@ extension RMCharacterListViewViewModel: UICollectionViewDataSource, UICollection
         let viewModel = RMCharacterCollectionViewCellViewModel(
             characterName: "Paru",
             characterStatus: .alive,
-            characterImageUrl: URL(string: "URL:https://rickandmortyapi.com/api/character/avatar/1.jpeg"))
+            characterImageUrl: URL(string:"https://rickandmortyapi.com/api/character/avatar/1.jpeg"))
         cell.configure(with: viewModel)
         return cell
     }
