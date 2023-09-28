@@ -1,5 +1,5 @@
 //
-//  CharacterListViewViewViewModel.swift
+//  RMCharacterListViewViewViewModel.swift
 //  RickAndMorty
 //
 //  Created by Paulo Pinheiro on 9/21/23.
@@ -8,7 +8,14 @@
 
 import UIKit
 
+protocol RMCharacterListViewViewViewModelDelegate: AnyObject {
+    func didLoadInitialCharacters()
+}
+
 final class RMCharacterListViewViewModel: NSObject {
+    
+    
+    public weak var delegate: RMCharacterListViewViewViewModelDelegate?
     
     private var characters: [RMCharacter] = [] {
         didSet {
@@ -34,6 +41,9 @@ final class RMCharacterListViewViewModel: NSObject {
             case .success(let responserMoldel):
                 let results = responserMoldel.results
                 self?.characters = results
+                DispatchQueue.main.async {
+                    self?.delegate?.didLoadInitialCharacters()
+                }
             case .failure(let error):
                 print(String(describing: error))
                 
