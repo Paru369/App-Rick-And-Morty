@@ -34,6 +34,7 @@
 		41B223C12AC1DCA100C2E23C /* RMCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223C02AC1DCA100C2E23C /* RMCharacterCollectionViewCell.swift */; };
 		41B223C32AC1E0B300C2E23C /* RMCharacterCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223C22AC1E0B300C2E23C /* RMCharacterCollectionViewCellViewModel.swift */; };
 		41B223C62AC8982300C2E23C /* RMCharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223C52AC8982300C2E23C /* RMCharacterDetailViewController.swift */; };
+		41B223C82AC899C300C2E23C /* RMCharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223C72AC899C300C2E23C /* RMCharacterDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		41B223C02AC1DCA100C2E23C /* RMCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		41B223C22AC1E0B300C2E23C /* RMCharacterCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		41B223C52AC8982300C2E23C /* RMCharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailViewController.swift; sourceTree = "<group>"; };
+		41B223C72AC899C300C2E23C /* RMCharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				41B223232ABD1B1F00C2E23C /* RMCharacterListView.swift */,
 				41B223C02AC1DCA100C2E23C /* RMCharacterCollectionViewCell.swift */,
+				41B223C72AC899C300C2E23C /* RMCharacterDetailView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				41B223012AB67C2D00C2E23C /* RMCharacter.swift in Sources */,
 				41B223122AB7A5E500C2E23C /* RMEndpoint.swift in Sources */,
 				41B223062AB6852C00C2E23C /* RMCharacterViewController.swift in Sources */,
+				41B223C82AC899C300C2E23C /* RMCharacterDetailView.swift in Sources */,
 				41B223102AB7A46A00C2E23C /* RMRequest.swift in Sources */,
 				41B2231E2ABD0E0A00C2E23C /* RMGetAllCharactersResponse.swift in Sources */,
 				41B223C12AC1DCA100C2E23C /* RMCharacterCollectionViewCell.swift in Sources */,
