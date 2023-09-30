@@ -60,16 +60,16 @@ class RMCharacterCollectionViewCell: UICollectionViewCell {
     private func setUpLayer() {
         contentView.layer.cornerRadius = 10
         contentView.layer.shadowColor = UIColor.label.cgColor
-        contentView.layer.cornerRadius = 4
-        contentView.layer.shadowOpacity = 4
-        contentView.layer.shadowOffset = CGSize(width: -2, height: -2)
-        contentView.layer.shadowOpacity = 0.2
+        contentView.layer.cornerRadius = 8
+        contentView.layer.shadowOpacity = 8
+        contentView.layer.shadowOffset = CGSize(width: -2, height: 2)
+        contentView.layer.shadowOpacity = 0.3
     }
     
     private func addConstraint() {
         NSLayoutConstraint.activate([
-            statusLabel.heightAnchor.constraint(equalToConstant: 30),
-            nameLabel.heightAnchor.constraint(equalToConstant: 30),
+            statusLabel.heightAnchor.constraint(equalToConstant: 20),
+            nameLabel.heightAnchor.constraint(equalToConstant: 20),
             
             statusLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 7),
             statusLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -7),
