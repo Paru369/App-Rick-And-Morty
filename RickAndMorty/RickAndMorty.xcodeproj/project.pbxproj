@@ -33,6 +33,7 @@
 		41B223262ABF560D00C2E23C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223252ABF560D00C2E23C /* Extensions.swift */; };
 		41B223C12AC1DCA100C2E23C /* RMCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223C02AC1DCA100C2E23C /* RMCharacterCollectionViewCell.swift */; };
 		41B223C32AC1E0B300C2E23C /* RMCharacterCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223C22AC1E0B300C2E23C /* RMCharacterCollectionViewCellViewModel.swift */; };
+		41B223C62AC8982300C2E23C /* RMCharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223C52AC8982300C2E23C /* RMCharacterDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		41B223252ABF560D00C2E23C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		41B223C02AC1DCA100C2E23C /* RMCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		41B223C22AC1E0B300C2E23C /* RMCharacterCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		41B223C52AC8982300C2E23C /* RMCharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		41B222FB2AB6768D00C2E23C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				41B223C42AC897ED00C2E23C /* Details */,
 				41B223042AB684A600C2E23C /* Core */,
 			);
 			name = Controllers;
@@ -205,6 +208,14 @@
 				41B2231D2ABD0E0A00C2E23C /* RMGetAllCharactersResponse.swift */,
 			);
 			name = APIResponseTypes;
+			sourceTree = "<group>";
+		};
+		41B223C42AC897ED00C2E23C /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				41B223C52AC8982300C2E23C /* RMCharacterDetailViewController.swift */,
+			);
+			name = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +299,7 @@
 				41B222E52AB6562900C2E23C /* SceneDelegate.swift in Sources */,
 				41B223262ABF560D00C2E23C /* Extensions.swift in Sources */,
 				41B223242ABD1B1F00C2E23C /* RMCharacterListView.swift in Sources */,
+				41B223C62AC8982300C2E23C /* RMCharacterDetailViewController.swift in Sources */,
 				41B222FF2AB67C1D00C2E23C /* RMLocation.swift in Sources */,
 				41B2230C2AB6858400C2E23C /* RMSettingsViewController.swift in Sources */,
 				41B2230E2AB7A44C00C2E23C /* RMService.swift in Sources */,
