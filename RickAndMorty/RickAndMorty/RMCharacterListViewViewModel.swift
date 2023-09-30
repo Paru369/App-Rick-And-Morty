@@ -13,6 +13,7 @@ protocol RMCharacterListViewViewViewModelDelegate: AnyObject {
     func didSelectCharater(_ character: RMCharacter)
 }
 
+/// ViewModel to hadle character list view logic
 final class RMCharacterListViewViewModel: NSObject {
     
     
@@ -34,6 +35,9 @@ final class RMCharacterListViewViewModel: NSObject {
     
     private var cellViewModels: [RMCharacterCollectionViewCellViewModel] = []
     
+    private var apiInfo: RMGetAllCharactersResponse.Info? = nil
+    
+    /// Fetch inital set of characters
    public func fetchCharacters() {
         RMService.shared.execute(.listCharactersRequests,
                                  expecting: RMGetAllCharactersResponse.self) { [weak self] result in
@@ -41,7 +45,9 @@ final class RMCharacterListViewViewModel: NSObject {
             switch result {
             case .success(let responserMoldel):
                 let results = responserMoldel.results
+                let info = responserMoldel.info
                 self?.characters = results
+                self?.apiInfo = info
                 DispatchQueue.main.async {
                     self?.delegate?.didLoadInitialCharacters()
                 }
@@ -51,8 +57,19 @@ final class RMCharacterListViewViewModel: NSObject {
             }
         }
     }
+    
+    /// Paginate if addicitonal characters are needed
+    public func fectchAdditionaCharacters() {
+        //Fetch charactes
+    }
+    
+    
+    public var shouldShowLoadMoreIndicator: Bool {
+        return apiInfo?.next != nil
+    }
 }
 
+// MARK: CollectionView
 extension RMCharacterListViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -82,3 +99,13 @@ extension RMCharacterListViewViewModel: UICollectionViewDataSource, UICollection
 }
 
 
+//MARK - ScrollView
+
+extension RMCharacterListViewViewModel: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        //
+        guard shouldShowLoadMoreIndicator else {
+            return
+        }
+    }
+}

@@ -9,10 +9,15 @@ import UIKit
 
 /// Controller to detail of characters
 ///
-class RMCharacterDetailViewController: UIViewController {
+final class RMCharacterDetailViewController: UIViewController {
 
-    override init(viewModel: ) {
-        super.init(nibName: nil, bundle: nil)
+    private let viewModel: RMCharacterDetailViewViewModel
+    
+     init(viewModel: RMCharacterDetailViewViewModel) {
+         
+         self.viewModel = viewModel
+         
+         super.init(nibName: nil, bundle: nil)
         
     }
     
@@ -24,7 +29,7 @@ class RMCharacterDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        
+        title = viewModel.title
         
     }
 
