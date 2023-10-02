@@ -37,6 +37,7 @@
 		41B223C82AC899C300C2E23C /* RMCharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223C72AC899C300C2E23C /* RMCharacterDetailView.swift */; };
 		41B223CA2AC89D3000C2E23C /* RMCharacterDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223C92AC89D3000C2E23C /* RMCharacterDetailViewViewModel.swift */; };
 		41B223CC2AC8CC5B00C2E23C /* RMFooterLoadingCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223CB2AC8CC5B00C2E23C /* RMFooterLoadingCollectionReusableView.swift */; };
+		41B223CE2ACA522400C2E23C /* RMImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223CD2ACA522400C2E23C /* RMImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		41B223C72AC899C300C2E23C /* RMCharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailView.swift; sourceTree = "<group>"; };
 		41B223C92AC89D3000C2E23C /* RMCharacterDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailViewViewModel.swift; sourceTree = "<group>"; };
 		41B223CB2AC8CC5B00C2E23C /* RMFooterLoadingCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMFooterLoadingCollectionReusableView.swift; sourceTree = "<group>"; };
+		41B223CD2ACA522400C2E23C /* RMImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				41B2231B2ABD087D00C2E23C /* RMAPICacheManager.swift */,
+				41B223CD2ACA522400C2E23C /* RMImageLoader.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				41B223142AB7E43600C2E23C /* RMOrigin.swift in Sources */,
 				41B223162AB7E4D200C2E23C /* RMSingleLocation.swift in Sources */,
 				41B223182AB7E57400C2E23C /* RMCharacterStatus.swift in Sources */,
+				41B223CE2ACA522400C2E23C /* RMImageLoader.swift in Sources */,
 				41B2231A2AB7E6B900C2E23C /* RMCharacterGender.swift in Sources */,
 				41B2230A2AB6855B00C2E23C /* RMLocationViewController.swift in Sources */,
 				41B223032AB67C3A00C2E23C /* RMEpisode.swift in Sources */,
