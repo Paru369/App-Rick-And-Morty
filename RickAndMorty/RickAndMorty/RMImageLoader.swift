@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 /// Manage for image loading
 final class RMImageLoader {
     /// Shared instance
