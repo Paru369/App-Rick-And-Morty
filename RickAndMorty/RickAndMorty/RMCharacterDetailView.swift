@@ -7,14 +7,19 @@
 
 import UIKit
 
-class RMCharacterDetailView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+/// View for single character info
+final class RMCharacterDetailView: UIView {
+    
+    
+    override init(frame: CGRect) {
+        super.init(frame:frame)
+        translatesAutoresizingMaskIntoConstraints = false
+        backgroundColor = .systemYellow
     }
-    */
 
+    required init?(coder: NSCoder) {
+    fatalError("Unsuported")
 }
+    
+}
+
