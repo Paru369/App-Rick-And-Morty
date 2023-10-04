@@ -24,13 +24,5 @@ final class RMCharacterDetailViewViewModel {
         character.name.uppercased()
     }
     
-    public func fetchCharacterData() {
-        print(character.url)
-        guard let url = requestUrl,
-              let request = RMRequest(url: url) else {
-            print("Failed to create")
-            return
-        }
-        print(request.url)
-    }
+    
 }
