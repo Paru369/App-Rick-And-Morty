@@ -32,7 +32,7 @@ final class RMCharacterDetailViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .systemRed
         title = viewModel.title
         view.addSubview(detailView)
         navigationItem.rightBarButtonItem = UIBarButtonItem(
@@ -42,7 +42,12 @@ final class RMCharacterDetailViewController: UIViewController {
         )
         addConstraints()
         
+        detailView.collectionView?.delegate = self
+        detailView.collectionView?.dataSource = self
+        
     }
+    
+    
     
     @objc
     private func didTapShare(){
@@ -62,4 +67,15 @@ final class RMCharacterDetailViewController: UIViewController {
         ])
     }
 
+}
+// MARK: CollectionView
+extension RMCharacterDetailViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        return cell
+    }
 }
