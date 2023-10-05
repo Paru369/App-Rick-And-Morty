@@ -84,7 +84,7 @@ final class RMCharacterDetailView: UIView {
             trailing: 0)
         
         let group = NSCollectionLayoutGroup.vertical(
-            layoutSize:NSCollectionLayoutSize(
+            layoutSize: {NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1.0),
                 heightDimension: .absolute(150)
             ),

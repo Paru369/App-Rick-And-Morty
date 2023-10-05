@@ -32,7 +32,7 @@ final class RMCharacterDetailViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemRed
+        view.backgroundColor = .systemBackground
         title = viewModel.title
         view.addSubview(detailView)
         navigationItem.rightBarButtonItem = UIBarButtonItem(
@@ -76,6 +76,7 @@ extension RMCharacterDetailViewController: UICollectionViewDelegate, UICollectio
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        cell.backgroundColor = .systemPink
         return cell
     }
 }
