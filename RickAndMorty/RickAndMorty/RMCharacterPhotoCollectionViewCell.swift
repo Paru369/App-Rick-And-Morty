@@ -10,6 +10,18 @@ import UIKit
 final class RMCharacterPhotoCollectionViewCell: UICollectionViewCell {
     static let cellIdentifer = "RMCharacterPhotoCollectionViewCell"
     
+    private let imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleToFill
+    
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.layer.masksToBounds = true
+        imageView.layer.cornerRadius = 8
+        
+        return imageView
+        
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
