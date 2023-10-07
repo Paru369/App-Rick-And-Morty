@@ -99,7 +99,7 @@ extension RMCharacterDetailViewController: UICollectionViewDelegate, UICollectio
                fatalError()
            }
             cell.configure(with: viewModel)
-            cell.backgroundColor = .yellow
+            
             return cell
             
         case .information(let viewModels):
@@ -110,7 +110,7 @@ extension RMCharacterDetailViewController: UICollectionViewDelegate, UICollectio
                 fatalError()
             }
             cell.configure(with: viewModels[indexPath.row])
-            cell.backgroundColor = .red
+            
             return cell
             
         case .episodes(let viewModels):
@@ -121,7 +121,7 @@ extension RMCharacterDetailViewController: UICollectionViewDelegate, UICollectio
                 fatalError()
             }
             cell.configure(with: viewModels[indexPath.row])
-            cell.backgroundColor = .orange
+            
             return cell
         
         }

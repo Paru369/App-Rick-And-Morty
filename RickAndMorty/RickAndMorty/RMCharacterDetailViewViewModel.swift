@@ -67,9 +67,9 @@ final class RMCharacterDetailViewViewModel {
         
         item.contentInsets = NSDirectionalEdgeInsets(
             top: 0,
-            leading: 0,
+            leading: 2,
             bottom: 10,
-            trailing: 0)
+            trailing: 2)
         
         let group = NSCollectionLayoutGroup.vertical(
             layoutSize: NSCollectionLayoutSize(
@@ -121,9 +121,9 @@ final class RMCharacterDetailViewViewModel {
         
         item.contentInsets = NSDirectionalEdgeInsets(
             top: 10,
-            leading: 5,
+            leading: 2,
             bottom: 10,
-            trailing: 8)
+            trailing: 2)
         
         let group = NSCollectionLayoutGroup.horizontal(
             layoutSize: NSCollectionLayoutSize(
