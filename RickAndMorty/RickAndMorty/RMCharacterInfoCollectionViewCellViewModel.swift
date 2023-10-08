@@ -33,7 +33,7 @@ final class RMCharacterInfoCollectionViewCellViewModel {
     }
     
     
-    enum `Type`{
+    enum `Type`: String{
         case status
         case gender
         case type
@@ -87,22 +87,22 @@ final class RMCharacterInfoCollectionViewCellViewModel {
         
         var displayTitle: String {
             switch self {
-            case .status:
-                return "Something"
-            case .gender:
-                return "Something"
-            case .type:
-                return "Something"
-            case .species:
-                return "Something"
-            case .origin:
-                return "Something"
-            case .created:
-                return "Something"
-            case .location:
-                return "Something"
+            case .status,
+   
+             .gender,
+         
+             .type,
+  
+             .species,
+           
+             .origin,
+    
+             .created,
+           
+             .location:
+                return rawValue.uppercased()
             case .episodeCount:
-                return "Something"
+                return "EPISODE COUNT"
             }
         }
     }
