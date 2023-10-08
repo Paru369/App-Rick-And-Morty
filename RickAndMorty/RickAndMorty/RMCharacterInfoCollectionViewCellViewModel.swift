@@ -5,7 +5,7 @@
 //  Created by Paulo Pinheiro on 10/6/23.
 //
 
-import Foundation
+import UIKit
 
 
 final class RMCharacterInfoCollectionViewCellViewModel {
@@ -24,7 +24,7 @@ final class RMCharacterInfoCollectionViewCellViewModel {
         return value
     }
     
-    
+  
     
     enum `Type`{
         case status
@@ -35,6 +35,26 @@ final class RMCharacterInfoCollectionViewCellViewModel {
         case created
         case location
         case episodeCount
+        
+        var iconImage: UIImage? {
+            switch self {
+            case .status:
+                return UIImage(systemName: "bell")
+            case .gender:
+                return UIImage(systemName: "")
+            case .type:
+                return UIImage(systemName: "")
+            case .species:
+                return UIImage(systemName: "")
+            case .origin:
+                return UIImage(systemName: "")
+            case .created:
+                return UIImage(systemName: "")
+            case .location:
+                return UIImage(systemName: "")
+            case .episodeCount:
+                return UIImage(systemName: "")
+        }
         
         var displayTitle: String {
             switch self {
