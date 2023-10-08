@@ -10,9 +10,21 @@ import UIKit
 
 final class RMCharacterInfoCollectionViewCellViewModel {
     private let type: `Type`
-    
     private let value: String
     
+    static let dateFormatter: DateFormatter = {
+       let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSZ"
+        formatter.timeZone = .current
+        return formatter
+    }()
+    
+    static let shortDateFormatter: DateFormatter = {
+       let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .short
+        return formatter
+    }()
     
     public var title: String {
         self.type.displayTitle
@@ -21,6 +33,11 @@ final class RMCharacterInfoCollectionViewCellViewModel {
     public var displayValue: String {
        
         if value.isEmpty {return "none"}
+        
+        
+        if let date = Self.dateFormatter.date(from: value), type == .created {
+            return Self.shortDateFormatter.string(from: date)
+        }
         return value
     }
     
