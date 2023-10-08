@@ -20,9 +20,11 @@ final class RMCharacterInfoCollectionViewCellViewModel {
     
     public var displayValue: String {
        
-        if value.isEmpty {return "none}
+        if value.isEmpty {return "none"}
         return value
     }
+    
+    
     
     enum `Type`{
         case status
