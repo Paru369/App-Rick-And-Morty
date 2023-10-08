@@ -24,7 +24,14 @@ final class RMCharacterInfoCollectionViewCellViewModel {
         return value
     }
     
-  
+    public var iconImage: UIImage? {
+        return type.iconImage
+    }
+    
+    public var tintColor: UIColor? {
+        return type.tintColor
+    }
+    
     
     enum `Type`{
         case status
@@ -35,6 +42,27 @@ final class RMCharacterInfoCollectionViewCellViewModel {
         case created
         case location
         case episodeCount
+        
+        var tintColor: UIColor? {
+            switch self {
+            case .status:
+                return .blue
+            case .gender:
+                return .systemPink
+            case .type:
+                return .red
+            case .species:
+                return .purple
+            case .origin:
+                return .systemGreen
+            case .created:
+                return .magenta
+            case .location:
+                return .systemCyan
+            case .episodeCount:
+                return .cyan
+            }
+        }
         
         var iconImage: UIImage? {
             switch self {
@@ -54,6 +82,7 @@ final class RMCharacterInfoCollectionViewCellViewModel {
                 return UIImage(systemName: "")
             case .episodeCount:
                 return UIImage(systemName: "")
+            }
         }
         
         var displayTitle: String {
