@@ -11,11 +11,17 @@ import Foundation
 final class RMCharacterInfoCollectionViewCellViewModel {
     private let type: `Type`
     
-    public let value: String
+    private let value: String
     
     
     public var title: String {
         self.type.displayTitle
+    }
+    
+    public var displayValue: String {
+       
+        if value.isEmpty {return "none}
+        return value
     }
     
     enum `Type`{
