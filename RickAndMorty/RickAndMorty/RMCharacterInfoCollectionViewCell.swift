@@ -13,7 +13,7 @@ final class RMCharacterInfoCollectionViewCell: UICollectionViewCell {
     private let valueLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Earth"
+       
         label.font = .systemFont(ofSize: 22, weight: .semibold)
         return label
     }()
@@ -21,7 +21,6 @@ final class RMCharacterInfoCollectionViewCell: UICollectionViewCell {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Location"
         label.textAlignment = .center
         label.font = .systemFont(ofSize: 20, weight: .medium)
         return label
@@ -30,7 +29,6 @@ final class RMCharacterInfoCollectionViewCell: UICollectionViewCell {
     private let iconImageView: UIImageView = {
         let icon = UIImageView()
         icon.translatesAutoresizingMaskIntoConstraints = false
-        icon.image = UIImage(systemName: "globe.americas")
         icon.contentMode = .scaleAspectFit
         return icon
     }()
@@ -97,7 +95,8 @@ final class RMCharacterInfoCollectionViewCell: UICollectionViewCell {
     }
     
     public func configure(with viewModel: RMCharacterInfoCollectionViewCellViewModel) {
-        
+        titleLabel.text = viewModel.title
+        valueLabel.text = viewModel.value
     }
     
 }
