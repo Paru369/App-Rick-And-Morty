@@ -28,7 +28,7 @@ class RMCharacterCollectionViewCell: UICollectionViewCell {
     private let nameLabel: UILabel = {
         let label = UILabel()
         label.textColor = .label
-        label.font = .systemFont(ofSize: 18, weight: .medium)
+        label.font = .systemFont(ofSize: 16, weight: .medium)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
         
