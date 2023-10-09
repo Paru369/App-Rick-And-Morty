@@ -40,6 +40,7 @@ final class RMCharacterEpisodeCollectionViewCell: UICollectionViewCell {
         contentView.layer.borderWidth = 1
         contentView.layer.borderColor = UIColor.systemBlue.cgColor
         contentView.addSubviews(seasonLabel, nameLabel, airDateLabel)
+        setUpConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -47,18 +48,24 @@ final class RMCharacterEpisodeCollectionViewCell: UICollectionViewCell {
     }
     
     private func setUpConstraints() {
-        
+        NSLayoutConstraint.activate([
+        ])
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        seasonLabel.text = nil
+        nameLabel.text = nil
+        airDateLabel.text = nil
     }
     
     public func configure(with viewModel: RMCharacterEpisodeCollectionViewCellViewModel) {
-        viewModel.registerData { data in
-            print(data.name)
-            print(data.air_date)
-            print(data.episode)
+        viewModel.registerData { [weak self] data in
+           // Main Queue
+  
+            self?.nameLabel.text = data.name
+            self?.seasonLabel.text = "Episode "+data.episode
+            self?.airDateLabel.text = "Aired on "+data.air_date
         }
         viewModel.fetchEpisode()
     }
