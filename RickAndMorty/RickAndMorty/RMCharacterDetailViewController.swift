@@ -120,6 +120,7 @@ extension RMCharacterDetailViewController: UICollectionViewDelegate, UICollectio
             ) as? RMCharacterEpisodeCollectionViewCell else {
                 fatalError()
             }
+            
             cell.configure(with: viewModels[indexPath.row])
             
             return cell
