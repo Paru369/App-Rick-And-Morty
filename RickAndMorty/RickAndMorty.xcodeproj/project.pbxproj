@@ -46,6 +46,7 @@
 		41B223DD2AD0C97400C2E23C /* RMCharacterEpisodeCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223DC2AD0C97400C2E23C /* RMCharacterEpisodeCollectionViewCellViewModel.swift */; };
 		41B223DF2AD46EBA00C2E23C /* RMEpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223DE2AD46EBA00C2E23C /* RMEpisodeDetailViewController.swift */; };
 		41B223E12AD57BFA00C2E23C /* RMEpisodeDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223E02AD57BFA00C2E23C /* RMEpisodeDetailViewViewModel.swift */; };
+		41B223E32AD57CA300C2E23C /* RMEpisodeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223E22AD57CA300C2E23C /* RMEpisodeDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		41B223DC2AD0C97400C2E23C /* RMCharacterEpisodeCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterEpisodeCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		41B223DE2AD46EBA00C2E23C /* RMEpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeDetailViewController.swift; sourceTree = "<group>"; };
 		41B223E02AD57BFA00C2E23C /* RMEpisodeDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeDetailViewViewModel.swift; sourceTree = "<group>"; };
+		41B223E22AD57CA300C2E23C /* RMEpisodeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				41B223D02AD0C72600C2E23C /* Character */,
 				41B223CF2AD0C70100C2E23C /* CharacterDetail */,
 				41B223CB2AC8CC5B00C2E23C /* RMFooterLoadingCollectionReusableView.swift */,
+				41B223E22AD57CA300C2E23C /* RMEpisodeDetailView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				41B223C82AC899C300C2E23C /* RMCharacterDetailView.swift in Sources */,
 				41B223DD2AD0C97400C2E23C /* RMCharacterEpisodeCollectionViewCellViewModel.swift in Sources */,
 				41B223102AB7A46A00C2E23C /* RMRequest.swift in Sources */,
+				41B223E32AD57CA300C2E23C /* RMEpisodeDetailView.swift in Sources */,
 				41B2231E2ABD0E0A00C2E23C /* RMGetAllCharactersResponse.swift in Sources */,
 				41B223C12AC1DCA100C2E23C /* RMCharacterCollectionViewCell.swift in Sources */,
 				41B223D92AD0C92600C2E23C /* RMCharacterPhotoCollectionViewCellViewModel.swift in Sources */,

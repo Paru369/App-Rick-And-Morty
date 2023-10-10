@@ -11,8 +11,12 @@ class RMEpisodeDetailViewViewModel {
     
     private let endpointUrl: URL?
     
-    init(endointUrl: URL?) {
-        self.endpointUrl = endointUrl
+    init(endpointUrl: URL?) {
+        self.endpointUrl = endpointUrl
+        fetchEpisodeData()
     }
 
+    private func fetchEpisodeData() {
+        
+    }
 }
