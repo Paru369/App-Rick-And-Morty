@@ -81,12 +81,7 @@ class RMEpisodeListView: UIView {
 }
 
 extension RMEpisodeListView: RMEpisodeListViewViewModelDelegate {
-    
 
-    
-    func didSelectEpisode(_ episode: RMEpisode) {
-        delegate?.rmEpisodeListView(self, didSelectEpisode: episode)
-    }
     
     func didLoadInitialEpisodes() {
         collectionView.reloadData() // Initial fectch characters
@@ -102,5 +97,11 @@ extension RMEpisodeListView: RMEpisodeListViewViewModelDelegate {
         collectionView.performBatchUpdates{
             self.collectionView.insertItems(at: newIndexPath)
         }
+    }
+    
+
+    func didSelectEpisode(_ episode: RMEpisode) {
+        delegate?.rmEpisodeListView(self, didSelectEpisode: episode)
+        
     }
 }
