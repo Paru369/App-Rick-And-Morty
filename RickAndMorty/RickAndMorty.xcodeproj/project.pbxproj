@@ -51,6 +51,8 @@
 		41B223E82AD62BBE00C2E23C /* RMEpisodeListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223E72AD62BBE00C2E23C /* RMEpisodeListViewViewModel.swift */; };
 		41B223EA2AD7494B00C2E23C /* RMGetAllEpisodesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223E92AD7494B00C2E23C /* RMGetAllEpisodesResponse.swift */; };
 		41B223EC2AD8B29900C2E23C /* RMSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223EB2AD8B29900C2E23C /* RMSearchViewController.swift */; };
+		41B223EF2ADA028D00C2E23C /* RMEpisodeInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223EE2ADA028D00C2E23C /* RMEpisodeInfoCollectionViewCell.swift */; };
+		41B223F22ADA02E200C2E23C /* RMEpisodeInfoCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223F12ADA02E200C2E23C /* RMEpisodeInfoCollectionViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +102,8 @@
 		41B223E72AD62BBE00C2E23C /* RMEpisodeListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeListViewViewModel.swift; sourceTree = "<group>"; };
 		41B223E92AD7494B00C2E23C /* RMGetAllEpisodesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMGetAllEpisodesResponse.swift; sourceTree = "<group>"; };
 		41B223EB2AD8B29900C2E23C /* RMSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSearchViewController.swift; sourceTree = "<group>"; };
+		41B223EE2ADA028D00C2E23C /* RMEpisodeInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		41B223F12ADA02E200C2E23C /* RMEpisodeInfoCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeInfoCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,7 @@
 		41B222F62AB675D400C2E23C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				41B223ED2ADA022900C2E23C /* EpisodeDetail */,
 				41B223E42AD5BC3300C2E23C /* Episodes */,
 				41B223D02AD0C72600C2E23C /* Character */,
 				41B223CF2AD0C70100C2E23C /* CharacterDetail */,
@@ -168,10 +173,10 @@
 		41B222F92AB6766100C2E23C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				41B223F02ADA02B200C2E23C /* EpisodeDetail */,
 				41B223D72AD0C8AE00C2E23C /* CharacterDetail */,
 				41B223212ABD1A7F00C2E23C /* RMCharacterListViewViewModel.swift */,
 				41B223C22AC1E0B300C2E23C /* RMCharacterCollectionViewCellViewModel.swift */,
-				41B223E02AD57BFA00C2E23C /* RMEpisodeDetailViewViewModel.swift */,
 				41B223E72AD62BBE00C2E23C /* RMEpisodeListViewViewModel.swift */,
 			);
 			name = ViewModels;
@@ -301,6 +306,23 @@
 			name = Episodes;
 			sourceTree = "<group>";
 		};
+		41B223ED2ADA022900C2E23C /* EpisodeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				41B223EE2ADA028D00C2E23C /* RMEpisodeInfoCollectionViewCell.swift */,
+			);
+			name = EpisodeDetail;
+			sourceTree = "<group>";
+		};
+		41B223F02ADA02B200C2E23C /* EpisodeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				41B223E02AD57BFA00C2E23C /* RMEpisodeDetailViewViewModel.swift */,
+				41B223F12ADA02E200C2E23C /* RMEpisodeInfoCollectionViewCellViewModel.swift */,
+			);
+			name = EpisodeDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -411,6 +433,8 @@
 				41B223E82AD62BBE00C2E23C /* RMEpisodeListViewViewModel.swift in Sources */,
 				41B223C32AC1E0B300C2E23C /* RMCharacterCollectionViewCellViewModel.swift in Sources */,
 				41B223EA2AD7494B00C2E23C /* RMGetAllEpisodesResponse.swift in Sources */,
+				41B223F22ADA02E200C2E23C /* RMEpisodeInfoCollectionViewCellViewModel.swift in Sources */,
+				41B223EF2ADA028D00C2E23C /* RMEpisodeInfoCollectionViewCell.swift in Sources */,
 				41B223E12AD57BFA00C2E23C /* RMEpisodeDetailViewViewModel.swift in Sources */,
 				41B223082AB6854500C2E23C /* RMEpisodesViewController.swift in Sources */,
 			);
