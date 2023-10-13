@@ -50,6 +50,7 @@
 		41B223E62AD5BC6800C2E23C /* RMEpisodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223E52AD5BC6800C2E23C /* RMEpisodeListView.swift */; };
 		41B223E82AD62BBE00C2E23C /* RMEpisodeListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223E72AD62BBE00C2E23C /* RMEpisodeListViewViewModel.swift */; };
 		41B223EA2AD7494B00C2E23C /* RMGetAllEpisodesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223E92AD7494B00C2E23C /* RMGetAllEpisodesResponse.swift */; };
+		41B223EC2AD8B29900C2E23C /* RMSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223EB2AD8B29900C2E23C /* RMSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		41B223E52AD5BC6800C2E23C /* RMEpisodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeListView.swift; sourceTree = "<group>"; };
 		41B223E72AD62BBE00C2E23C /* RMEpisodeListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeListViewViewModel.swift; sourceTree = "<group>"; };
 		41B223E92AD7494B00C2E23C /* RMGetAllEpisodesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMGetAllEpisodesResponse.swift; sourceTree = "<group>"; };
+		41B223EB2AD8B29900C2E23C /* RMSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +257,7 @@
 			children = (
 				41B223C52AC8982300C2E23C /* RMCharacterDetailViewController.swift */,
 				41B223DE2AD46EBA00C2E23C /* RMEpisodeDetailViewController.swift */,
+				41B223EB2AD8B29900C2E23C /* RMSearchViewController.swift */,
 			);
 			name = Details;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				41B223142AB7E43600C2E23C /* RMOrigin.swift in Sources */,
 				41B223D62AD0C8A300C2E23C /* RMCharacterEpisodeCollectionViewCell.swift in Sources */,
 				41B223162AB7E4D200C2E23C /* RMSingleLocation.swift in Sources */,
+				41B223EC2AD8B29900C2E23C /* RMSearchViewController.swift in Sources */,
 				41B223182AB7E57400C2E23C /* RMCharacterStatus.swift in Sources */,
 				41B223CE2ACA522400C2E23C /* RMImageLoader.swift in Sources */,
 				41B2231A2AB7E6B900C2E23C /* RMCharacterGender.swift in Sources */,
