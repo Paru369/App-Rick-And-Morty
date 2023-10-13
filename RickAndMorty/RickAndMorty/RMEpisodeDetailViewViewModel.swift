@@ -21,8 +21,16 @@ class RMEpisodeDetailViewViewModel {
         }
     }
     
-   public weak var delegate: RMEpisodeDetailViewViewModelDelegate?
+
+    enum SectionType {
+        case information(viewModels: [RMEpisodeInfoCollectionViewCellViewModel ])
+        case characters(viewModel: [RMCharacterCollectionViewCell])
+    }
     
+    public weak var delegate: RMEpisodeDetailViewViewModelDelegate?
+    
+    
+    public private(set) var sections: [SectionType] = []
     // MARK: - Init
     
     
@@ -92,8 +100,8 @@ class RMEpisodeDetailViewViewModel {
         
         group.notify(queue: .main) {
             self.dataTuple = (
-                episode,
-                characters
+                episode: episode,
+                characters: characters
             )
         }
     }
