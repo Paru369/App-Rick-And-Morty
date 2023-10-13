@@ -7,21 +7,38 @@
 
 import UIKit
 
+protocol RMEpisodeDetailViewViewModelDelegate: AnyObject {
+    func didFetchEpisodeDetails()
+}
+
 class RMEpisodeDetailViewViewModel {
     
     private let endpointUrl: URL?
     
+    private var dataTuple: (RMEpisode, [RMCharacter])? {
+        didSet {
+            delegate?.didFetchEpisodeDetails()
+        }
+    }
     
-    // MARK: -Init
+   public weak var delegate: RMEpisodeDetailViewViewModelDelegate?
+    
+    // MARK: - Init
+    
+    
     init(endpointUrl: URL?) {
         self.endpointUrl = endpointUrl
-        fetchEpisodeData()
+      
     }
+    
+    // MARK: - Public
+    
+    //MARK: - Private
     
     
     // Fetch backing episode model
     
-    private func fetchEpisodeData() {
+    public func fetchEpisodeData() {
         guard let url = endpointUrl,
               let request = RMRequest(url: url) else {
             return
@@ -45,7 +62,7 @@ class RMEpisodeDetailViewViewModel {
         let characterUrls: [URL] = episode.characters.compactMap({
             return URL(string: $0)
         })
-        let request: [RMRequest] = characterUrls.compactMap({
+        let requests: [RMRequest] = characterUrls.compactMap({
             return RMRequest(url: $0)
         })
         
@@ -53,6 +70,31 @@ class RMEpisodeDetailViewViewModel {
         //Notifiedonce all done
         
         let group = DispatchGroup()
-        '
+        
+        var characters: [RMCharacter] = []
+        
+        for request in requests {
+            group.enter()
+            RMService.shared.execute(request, expecting: RMCharacter.self) {
+                result in
+                defer {
+                    group.leave()
+                }
+                switch result {
+                case . success(let model):
+                    characters.append(model)
+                case .failure:
+                    break
+                    
+                }
+            }
+        }
+        
+        group.notify(queue: .main) {
+            self.dataTuple = (
+                episode,
+                characters
+            )
+        }
     }
 }
