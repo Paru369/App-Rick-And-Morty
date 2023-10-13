@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Configurable controller to search
 class RMSearchViewController: UIViewController {
 
     
@@ -32,6 +33,7 @@ class RMSearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Search"
+        view.backgroundColor = .secondarySystemBackground
 
      
     }
