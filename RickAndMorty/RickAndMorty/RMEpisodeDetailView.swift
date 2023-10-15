@@ -94,11 +94,22 @@ final class RMEpisodeDetailView: UIView {
 
 extension RMEpisodeDetailView: UICollectionViewDelegate, UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        return viewModel?.cellViewModels.count ?? 0
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        guard let sections = viewModel?.cellViewModels else {
+            return 0
+            
+        }
+        let sectionType = sections[section]
+        switch sectionType {
+        case . information(let viewModels):
+            return viewModels.count
+        case .characters(let viewModels):
+            return viewModels.count
+        }
+        
     }
     
     
