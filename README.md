@@ -70,8 +70,6 @@ If you would like to contribuite, make a fork and send a PR.
 Thanks to my cats that help me on coding.
 
 
-Thanks DIO and Santander for this Bootcamp
-
 ___
 
 ⌨️ with ❤️ by [Paulo Victor](https://github.com/Paru369) 👨🏾‍💻📱
