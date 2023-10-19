@@ -9,9 +9,9 @@ Rick and Morty themed iOS app using Swift and UIKit
 🎬 Listas de filmes populares e próximos. <br>
 🔍 Recurso de pesquisa. <br>
 🎥 Reprodução de trailers de filmes. 
-<br>
-<br>
 
+<br>
+<br>
 ## 📱 Technologies and knowledges 
 - UIKit and SwiftUI
 - MVVM 
@@ -21,11 +21,9 @@ Rick and Morty themed iOS app using Swift and UIKit
 ## 📲 Images
 <img align="center" width="200px" src="https://github.com/Paru369/App-UIKit-StoryBoard-XIB-ViewCodeDesafio_FInal_01-DIO-Santander/blob/main/images/iflix.gif">  <img align="center" width="200px" src="https://github.com/Paru369/App-UIKit-StoryBoard-XIB-ViewCodeDesafio_FInal_01-DIO-Santander/blob/main/images/iflix1.png">  <img align="center" width="200px" src="https://github.com/Paru369/App-UIKit-StoryBoard-XIB-ViewCodeDesafio_FInal_01-DIO-Santander/blob/main/images/iflix2.png">  <img align="center" width="200px" src="https://github.com/Paru369/App-UIKit-StoryBoard-XIB-ViewCodeDesafio_FInal_01-DIO-Santander/blob/main/images/iflix3.png">  <img align="center" width="200px" src="https://github.com/Paru369/App-UIKit-StoryBoard-XIB-ViewCodeDesafio_FInal_01-DIO-Santander/blob/main/images/iflix4.png">  <img align="center" width="200px" src="https://github.com/Paru369/App-UIKit-StoryBoard-XIB-ViewCodeDesafio_FInal_01-DIO-Santander/blob/main/images/iflix5.png"> 
           
-
 ## ☑️ Requirements
 
 - [XCode](https://developer.apple.com/xcode/)
-
 
 ## ⚙️ How to RUN
 
