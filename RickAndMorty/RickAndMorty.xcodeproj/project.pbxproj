@@ -156,7 +156,6 @@
 				41B223D02AD0C72600C2E23C /* Character */,
 				41B223CF2AD0C70100C2E23C /* CharacterDetail */,
 				41B223CB2AC8CC5B00C2E23C /* RMFooterLoadingCollectionReusableView.swift */,
-				41B223E22AD57CA300C2E23C /* RMEpisodeDetailView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -309,6 +308,7 @@
 		41B223ED2ADA022900C2E23C /* EpisodeDetail */ = {
 			isa = PBXGroup;
 			children = (
+				41B223E22AD57CA300C2E23C /* RMEpisodeDetailView.swift */,
 				41B223EE2ADA028D00C2E23C /* RMEpisodeInfoCollectionViewCell.swift */,
 			);
 			name = EpisodeDetail;
