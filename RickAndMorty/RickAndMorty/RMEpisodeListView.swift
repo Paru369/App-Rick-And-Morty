@@ -36,7 +36,7 @@ class RMEpisodeListView: UIView {
         collectionView.isHidden = true
         collectionView.alpha = 0
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.register(RMCharacterEpisodeCollectionViewCell.self,  forCellWithReuseIdentifier: RMCharacterEpisodeCollectionViewCell.cellIdentifier)
+        collectionView.register(RMCharacterEpisodeCollectionViewCell.self,  forCellWithReuseIdentifier: RMCharacterEpisodeCollectionViewCell.cellIdentifer)
         
         collectionView.register(RMFooterLoadingCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: RMFooterLoadingCollectionReusableView.identifier)
         
@@ -81,6 +81,8 @@ class RMEpisodeListView: UIView {
 }
 
 extension RMEpisodeListView: RMEpisodeListViewViewModelDelegate {
+  
+    
 
     
     func didLoadInitialEpisodes() {
@@ -92,7 +94,7 @@ extension RMEpisodeListView: RMEpisodeListViewViewModelDelegate {
         }
     }
     
-    func didLoadMoreEpisode(with newIndexPath: [IndexPath]) {
+    func didLoadMoreEpisodes(with newIndexPath: [IndexPath]) {
         
         collectionView.performBatchUpdates{
             self.collectionView.insertItems(at: newIndexPath)
