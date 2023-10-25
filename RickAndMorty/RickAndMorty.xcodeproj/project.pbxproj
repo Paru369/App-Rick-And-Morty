@@ -54,6 +54,7 @@
 		41B223EF2ADA028D00C2E23C /* RMEpisodeInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223EE2ADA028D00C2E23C /* RMEpisodeInfoCollectionViewCell.swift */; };
 		41B223F22ADA02E200C2E23C /* RMEpisodeInfoCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223F12ADA02E200C2E23C /* RMEpisodeInfoCollectionViewCellViewModel.swift */; };
 		41F2EBED2AE8AA5D0049F39F /* RMSettingsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EBEC2AE8AA5D0049F39F /* RMSettingsViewViewModel.swift */; };
+		41F2EBF02AE8AAE30049F39F /* RMSettingsOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EBEF2AE8AAE30049F39F /* RMSettingsOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +107,7 @@
 		41B223EE2ADA028D00C2E23C /* RMEpisodeInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeInfoCollectionViewCell.swift; sourceTree = "<group>"; };
 		41B223F12ADA02E200C2E23C /* RMEpisodeInfoCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeInfoCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		41F2EBEC2AE8AA5D0049F39F /* RMSettingsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSettingsViewViewModel.swift; sourceTree = "<group>"; };
+		41F2EBEF2AE8AAE30049F39F /* RMSettingsOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSettingsOption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,12 +176,12 @@
 		41B222F92AB6766100C2E23C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				41F2EBEE2AE8AACE0049F39F /* Settings */,
 				41B223F02ADA02B200C2E23C /* EpisodeDetail */,
 				41B223D72AD0C8AE00C2E23C /* CharacterDetail */,
 				41B223212ABD1A7F00C2E23C /* RMCharacterListViewViewModel.swift */,
 				41B223C22AC1E0B300C2E23C /* RMCharacterCollectionViewCellViewModel.swift */,
 				41B223E72AD62BBE00C2E23C /* RMEpisodeListViewViewModel.swift */,
-				41F2EBEC2AE8AA5D0049F39F /* RMSettingsViewViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -326,6 +328,15 @@
 			name = EpisodeDetail;
 			sourceTree = "<group>";
 		};
+		41F2EBEE2AE8AACE0049F39F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				41F2EBEC2AE8AA5D0049F39F /* RMSettingsViewViewModel.swift */,
+				41F2EBEF2AE8AAE30049F39F /* RMSettingsOption.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -398,6 +409,7 @@
 			files = (
 				41B223142AB7E43600C2E23C /* RMOrigin.swift in Sources */,
 				41B223D62AD0C8A300C2E23C /* RMCharacterEpisodeCollectionViewCell.swift in Sources */,
+				41F2EBF02AE8AAE30049F39F /* RMSettingsOption.swift in Sources */,
 				41B223162AB7E4D200C2E23C /* RMSingleLocation.swift in Sources */,
 				41B223EC2AD8B29900C2E23C /* RMSearchViewController.swift in Sources */,
 				41B223182AB7E57400C2E23C /* RMCharacterStatus.swift in Sources */,
