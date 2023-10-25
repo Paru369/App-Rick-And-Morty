@@ -53,6 +53,7 @@
 		41B223EC2AD8B29900C2E23C /* RMSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223EB2AD8B29900C2E23C /* RMSearchViewController.swift */; };
 		41B223EF2ADA028D00C2E23C /* RMEpisodeInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223EE2ADA028D00C2E23C /* RMEpisodeInfoCollectionViewCell.swift */; };
 		41B223F22ADA02E200C2E23C /* RMEpisodeInfoCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B223F12ADA02E200C2E23C /* RMEpisodeInfoCollectionViewCellViewModel.swift */; };
+		41F2EBED2AE8AA5D0049F39F /* RMSettingsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EBEC2AE8AA5D0049F39F /* RMSettingsViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +105,7 @@
 		41B223EB2AD8B29900C2E23C /* RMSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSearchViewController.swift; sourceTree = "<group>"; };
 		41B223EE2ADA028D00C2E23C /* RMEpisodeInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeInfoCollectionViewCell.swift; sourceTree = "<group>"; };
 		41B223F12ADA02E200C2E23C /* RMEpisodeInfoCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeInfoCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		41F2EBEC2AE8AA5D0049F39F /* RMSettingsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSettingsViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				41B223212ABD1A7F00C2E23C /* RMCharacterListViewViewModel.swift */,
 				41B223C22AC1E0B300C2E23C /* RMCharacterCollectionViewCellViewModel.swift */,
 				41B223E72AD62BBE00C2E23C /* RMEpisodeListViewViewModel.swift */,
+				41F2EBEC2AE8AA5D0049F39F /* RMSettingsViewViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				41B222E72AB6562900C2E23C /* RMTabBarViewController.swift in Sources */,
 				41B222E32AB6562900C2E23C /* AppDelegate.swift in Sources */,
 				41B222E52AB6562900C2E23C /* SceneDelegate.swift in Sources */,
+				41F2EBED2AE8AA5D0049F39F /* RMSettingsViewViewModel.swift in Sources */,
 				41B223262ABF560D00C2E23C /* Extensions.swift in Sources */,
 				41B223242ABD1B1F00C2E23C /* RMCharacterListView.swift in Sources */,
 				41B223D42AD0C84F00C2E23C /* RMCharacterInfoCollectionViewCell.swift in Sources */,
