@@ -11,9 +11,9 @@ import UIKit
 
 enum RMSettingsOption: CaseIterable {
     case rateApp
-    case contactUs
+    case contactMe
     case terms
-    case privacy
+    case license
     case apiReference
     case viewSeries
     case viewCode
@@ -22,18 +22,18 @@ enum RMSettingsOption: CaseIterable {
         switch self {
         case .rateApp:
             return nil
-        case .contactUs:
-            return URL(string: "https://iosacademy.io")
+        case .contactMe:
+            return URL(string: "https://www.linkedin.com/in/paru369/")
         case .terms:
-            return URL(string: "https://iosacademy.io/terms")
-        case .privacy:
-            return URL(string: "https://iosacademy.io/privacy")
+            return URL(string: "https://github.com/Paru369")
+        case .license:
+            return URL(string: "https://github.com/Paru369/App-Rick-And-Morty/blob/main/LICENSE")
         case .apiReference:
-            return URL(string: "https://rickandmortyapi.com/documentation/#get-a-single-episode")
+            return URL(string: "https://rickandmortyapi.com")
         case .viewSeries:
-            return URL(string: "https://www.youtube.com/playlist?list=PL5PR3UyfTWvdl4Ya_2veOB6TM16FXuv4y")
+            return URL(string: "https://www.youtube.com/results?search_query=rick+and+morty")
         case .viewCode:
-            return URL(string: "https://github.com/AfrazCodes/RickAndMortyiOSApp")
+            return URL(string: "https://github.com/Paru369/App-Rick-And-Morty")
         }
     }
 
@@ -41,16 +41,16 @@ enum RMSettingsOption: CaseIterable {
         switch self {
         case .rateApp:
             return "Rate App"
-        case .contactUs:
-            return "Contact Us"
+        case .contactMe:
+            return "Linkedin"
         case .terms:
-            return "Terms of Service"
-        case .privacy:
-            return "Privacy Policy"
+            return "Github"
+        case .license:
+            return "MIT License"
         case .apiReference:
             return "API Reference"
         case .viewSeries:
-            return "View VIdeo Series"
+            return "View Rick and Morty on YT"
         case .viewCode:
             return "View App Code"
         }
@@ -60,11 +60,11 @@ enum RMSettingsOption: CaseIterable {
         switch self {
         case .rateApp:
             return .systemBlue
-        case .contactUs:
+        case .contactMe:
             return .systemGreen
         case .terms:
             return .systemRed
-        case .privacy:
+        case .license:
             return .systemYellow
         case .apiReference:
             return .systemOrange
@@ -79,11 +79,11 @@ enum RMSettingsOption: CaseIterable {
         switch self {
         case .rateApp:
             return UIImage(systemName: "star.fill")
-        case .contactUs:
+        case .contactMe:
             return UIImage(systemName: "paperplane")
         case .terms:
             return UIImage(systemName: "doc")
-        case .privacy:
+        case .license:
             return UIImage(systemName: "lock")
         case .apiReference:
             return UIImage(systemName: "list.clipboard")
