@@ -225,6 +225,7 @@
 		41B222FB2AB6768D00C2E23C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				41F2EC0B2AEC83780049F39F /* Search */,
 				41B223C42AC897ED00C2E23C /* Details */,
 				41B223042AB684A600C2E23C /* Core */,
 			);
@@ -293,7 +294,6 @@
 			children = (
 				41B223C52AC8982300C2E23C /* RMCharacterDetailViewController.swift */,
 				41B223DE2AD46EBA00C2E23C /* RMEpisodeDetailViewController.swift */,
-				41B223EB2AD8B29900C2E23C /* RMSearchViewController.swift */,
 				41F2EC042AEC1E0C0049F39F /* RMLocationDetailViewController.swift */,
 			);
 			name = Details;
@@ -400,6 +400,14 @@
 				41F2EC072AEC1E770049F39F /* RMLocationDetailView.swift */,
 			);
 			name = LocationsDetail;
+			sourceTree = "<group>";
+		};
+		41F2EC0B2AEC83780049F39F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				41B223EB2AD8B29900C2E23C /* RMSearchViewController.swift */,
+			);
+			name = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
