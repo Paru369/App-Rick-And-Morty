@@ -59,6 +59,7 @@
 		41F2EBF52AE978560049F39F /* RMSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EBF42AE978560049F39F /* RMSettingsView.swift */; };
 		41F2EBF82AEBDC5E0049F39F /* RMLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EBF72AEBDC5E0049F39F /* RMLocationView.swift */; };
 		41F2EBFB2AEBE1570049F39F /* RMLocationsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EBFA2AEBE1570049F39F /* RMLocationsViewViewModel.swift */; };
+		41F2EBFD2AEBE1B00049F39F /* RMLocationTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EBFC2AEBE1B00049F39F /* RMLocationTableViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,7 @@
 		41F2EBF42AE978560049F39F /* RMSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSettingsView.swift; sourceTree = "<group>"; };
 		41F2EBF72AEBDC5E0049F39F /* RMLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationView.swift; sourceTree = "<group>"; };
 		41F2EBFA2AEBE1570049F39F /* RMLocationsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationsViewViewModel.swift; sourceTree = "<group>"; };
+		41F2EBFC2AEBE1B00049F39F /* RMLocationTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationTableViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				41F2EBFA2AEBE1570049F39F /* RMLocationsViewViewModel.swift */,
+				41F2EBFC2AEBE1B00049F39F /* RMLocationTableViewCellViewModel.swift */,
 			);
 			name = Locations;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				41B223F22ADA02E200C2E23C /* RMEpisodeInfoCollectionViewCellViewModel.swift in Sources */,
 				41B223EF2ADA028D00C2E23C /* RMEpisodeInfoCollectionViewCell.swift in Sources */,
 				41B223E12AD57BFA00C2E23C /* RMEpisodeDetailViewViewModel.swift in Sources */,
+				41F2EBFD2AEBE1B00049F39F /* RMLocationTableViewCellViewModel.swift in Sources */,
 				41B223082AB6854500C2E23C /* RMEpisodesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
