@@ -66,6 +66,7 @@
 		41F2EC052AEC1E0C0049F39F /* RMLocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC042AEC1E0C0049F39F /* RMLocationDetailViewController.swift */; };
 		41F2EC082AEC1E770049F39F /* RMLocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC072AEC1E770049F39F /* RMLocationDetailView.swift */; };
 		41F2EC0A2AEC1F650049F39F /* RMGetAllLocationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC092AEC1F650049F39F /* RMGetAllLocationsResponse.swift */; };
+		41F2EC0D2AEC83D30049F39F /* RMSearchOptionPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC0C2AEC83D30049F39F /* RMSearchOptionPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +131,7 @@
 		41F2EC042AEC1E0C0049F39F /* RMLocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationDetailViewController.swift; sourceTree = "<group>"; };
 		41F2EC072AEC1E770049F39F /* RMLocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationDetailView.swift; sourceTree = "<group>"; };
 		41F2EC092AEC1F650049F39F /* RMGetAllLocationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMGetAllLocationsResponse.swift; sourceTree = "<group>"; };
+		41F2EC0C2AEC83D30049F39F /* RMSearchOptionPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSearchOptionPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -406,6 +408,7 @@
 			isa = PBXGroup;
 			children = (
 				41B223EB2AD8B29900C2E23C /* RMSearchViewController.swift */,
+				41F2EC0C2AEC83D30049F39F /* RMSearchOptionPickerViewController.swift */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 			files = (
 				41B223142AB7E43600C2E23C /* RMOrigin.swift in Sources */,
 				41B223D62AD0C8A300C2E23C /* RMCharacterEpisodeCollectionViewCell.swift in Sources */,
+				41F2EC0D2AEC83D30049F39F /* RMSearchOptionPickerViewController.swift in Sources */,
 				41F2EBF02AE8AAE30049F39F /* RMSettingsOption.swift in Sources */,
 				41B223162AB7E4D200C2E23C /* RMSingleLocation.swift in Sources */,
 				41B223EC2AD8B29900C2E23C /* RMSearchViewController.swift in Sources */,
