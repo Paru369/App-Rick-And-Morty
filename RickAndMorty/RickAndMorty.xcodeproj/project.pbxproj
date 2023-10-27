@@ -71,6 +71,7 @@
 		41F2EC122AEC849B0049F39F /* RMSearchResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC112AEC849B0049F39F /* RMSearchResultType.swift */; };
 		41F2EC142AEC84F20049F39F /* RMSearchInputViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC132AEC84F20049F39F /* RMSearchInputViewViewModel.swift */; };
 		41F2EC162AEC851E0049F39F /* RMNoSearchResultsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC152AEC851E0049F39F /* RMNoSearchResultsViewViewModel.swift */; };
+		41F2EC192AEC85950049F39F /* RMSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC182AEC85950049F39F /* RMSearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +141,7 @@
 		41F2EC112AEC849B0049F39F /* RMSearchResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSearchResultType.swift; sourceTree = "<group>"; };
 		41F2EC132AEC84F20049F39F /* RMSearchInputViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSearchInputViewViewModel.swift; sourceTree = "<group>"; };
 		41F2EC152AEC851E0049F39F /* RMNoSearchResultsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMNoSearchResultsViewViewModel.swift; sourceTree = "<group>"; };
+		41F2EC182AEC85950049F39F /* RMSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 		41B222F62AB675D400C2E23C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				41F2EC172AEC85600049F39F /* Search */,
 				41F2EC062AEC1E540049F39F /* LocationsDetail */,
 				41F2EBF62AEBDC200049F39F /* Locations */,
 				41B223ED2ADA022900C2E23C /* EpisodeDetail */,
@@ -433,6 +436,14 @@
 			name = Search;
 			sourceTree = "<group>";
 		};
+		41F2EC172AEC85600049F39F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				41F2EC182AEC85950049F39F /* RMSearchView.swift */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -534,6 +545,7 @@
 				41F2EBF52AE978560049F39F /* RMSettingsView.swift in Sources */,
 				41F2EC122AEC849B0049F39F /* RMSearchResultType.swift in Sources */,
 				41F2EC0A2AEC1F650049F39F /* RMGetAllLocationsResponse.swift in Sources */,
+				41F2EC192AEC85950049F39F /* RMSearchView.swift in Sources */,
 				41B223CA2AC89D3000C2E23C /* RMCharacterDetailViewViewModel.swift in Sources */,
 				41B223122AB7A5E500C2E23C /* RMEndpoint.swift in Sources */,
 				41B223062AB6852C00C2E23C /* RMCharacterViewController.swift in Sources */,
