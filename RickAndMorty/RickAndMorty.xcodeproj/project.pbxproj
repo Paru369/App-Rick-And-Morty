@@ -58,6 +58,7 @@
 		41F2EBF22AE8AB100049F39F /* RMSettingsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EBF12AE8AB100049F39F /* RMSettingsCellViewModel.swift */; };
 		41F2EBF52AE978560049F39F /* RMSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EBF42AE978560049F39F /* RMSettingsView.swift */; };
 		41F2EBF82AEBDC5E0049F39F /* RMLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EBF72AEBDC5E0049F39F /* RMLocationView.swift */; };
+		41F2EBFB2AEBE1570049F39F /* RMLocationsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EBFA2AEBE1570049F39F /* RMLocationsViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +115,7 @@
 		41F2EBF12AE8AB100049F39F /* RMSettingsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSettingsCellViewModel.swift; sourceTree = "<group>"; };
 		41F2EBF42AE978560049F39F /* RMSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSettingsView.swift; sourceTree = "<group>"; };
 		41F2EBF72AEBDC5E0049F39F /* RMLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationView.swift; sourceTree = "<group>"; };
+		41F2EBFA2AEBE1570049F39F /* RMLocationsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationsViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 		41B222F92AB6766100C2E23C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				41F2EBF92AEBE1300049F39F /* Locations */,
 				41F2EBEE2AE8AACE0049F39F /* Settings */,
 				41B223F02ADA02B200C2E23C /* EpisodeDetail */,
 				41B223D72AD0C8AE00C2E23C /* CharacterDetail */,
@@ -362,6 +365,14 @@
 			name = Locations;
 			sourceTree = "<group>";
 		};
+		41F2EBF92AEBE1300049F39F /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				41F2EBFA2AEBE1570049F39F /* RMLocationsViewViewModel.swift */,
+			);
+			name = Locations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -471,6 +482,7 @@
 				41B223C12AC1DCA100C2E23C /* RMCharacterCollectionViewCell.swift in Sources */,
 				41B223D92AD0C92600C2E23C /* RMCharacterPhotoCollectionViewCellViewModel.swift in Sources */,
 				41B2231C2ABD087D00C2E23C /* RMAPICacheManager.swift in Sources */,
+				41F2EBFB2AEBE1570049F39F /* RMLocationsViewViewModel.swift in Sources */,
 				41B223CC2AC8CC5B00C2E23C /* RMFooterLoadingCollectionReusableView.swift in Sources */,
 				41B223222ABD1A7F00C2E23C /* RMCharacterListViewViewModel.swift in Sources */,
 				41F2EBF82AEBDC5E0049F39F /* RMLocationView.swift in Sources */,
