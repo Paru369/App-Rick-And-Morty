@@ -73,6 +73,7 @@
 		41F2EC162AEC851E0049F39F /* RMNoSearchResultsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC152AEC851E0049F39F /* RMNoSearchResultsViewViewModel.swift */; };
 		41F2EC192AEC85950049F39F /* RMSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC182AEC85950049F39F /* RMSearchView.swift */; };
 		41F2EC1B2AEC85D30049F39F /* RMSearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC1A2AEC85D30049F39F /* RMSearchResultsView.swift */; };
+		41F2EC1D2AEC860E0049F39F /* RMSearchInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC1C2AEC860E0049F39F /* RMSearchInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +145,7 @@
 		41F2EC152AEC851E0049F39F /* RMNoSearchResultsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMNoSearchResultsViewViewModel.swift; sourceTree = "<group>"; };
 		41F2EC182AEC85950049F39F /* RMSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSearchView.swift; sourceTree = "<group>"; };
 		41F2EC1A2AEC85D30049F39F /* RMSearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSearchResultsView.swift; sourceTree = "<group>"; };
+		41F2EC1C2AEC860E0049F39F /* RMSearchInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSearchInputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -443,6 +445,7 @@
 			children = (
 				41F2EC182AEC85950049F39F /* RMSearchView.swift */,
 				41F2EC1A2AEC85D30049F39F /* RMSearchResultsView.swift */,
+				41F2EC1C2AEC860E0049F39F /* RMSearchInputView.swift */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -559,6 +562,7 @@
 				41B223102AB7A46A00C2E23C /* RMRequest.swift in Sources */,
 				41F2EC082AEC1E770049F39F /* RMLocationDetailView.swift in Sources */,
 				41F2EC142AEC84F20049F39F /* RMSearchInputViewViewModel.swift in Sources */,
+				41F2EC1D2AEC860E0049F39F /* RMSearchInputView.swift in Sources */,
 				41B223E32AD57CA300C2E23C /* RMEpisodeDetailView.swift in Sources */,
 				41B2231E2ABD0E0A00C2E23C /* RMGetAllCharactersResponse.swift in Sources */,
 				41B223C12AC1DCA100C2E23C /* RMCharacterCollectionViewCell.swift in Sources */,
