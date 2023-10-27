@@ -65,6 +65,7 @@
 		41F2EC032AEBE2C40049F39F /* RMLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC022AEBE2C40049F39F /* RMLocationTableViewCell.swift */; };
 		41F2EC052AEC1E0C0049F39F /* RMLocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC042AEC1E0C0049F39F /* RMLocationDetailViewController.swift */; };
 		41F2EC082AEC1E770049F39F /* RMLocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC072AEC1E770049F39F /* RMLocationDetailView.swift */; };
+		41F2EC0A2AEC1F650049F39F /* RMGetAllLocationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC092AEC1F650049F39F /* RMGetAllLocationsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +129,7 @@
 		41F2EC022AEBE2C40049F39F /* RMLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationTableViewCell.swift; sourceTree = "<group>"; };
 		41F2EC042AEC1E0C0049F39F /* RMLocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationDetailViewController.swift; sourceTree = "<group>"; };
 		41F2EC072AEC1E770049F39F /* RMLocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationDetailView.swift; sourceTree = "<group>"; };
+		41F2EC092AEC1F650049F39F /* RMGetAllLocationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMGetAllLocationsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +283,7 @@
 			children = (
 				41B2231D2ABD0E0A00C2E23C /* RMGetAllCharactersResponse.swift */,
 				41B223E92AD7494B00C2E23C /* RMGetAllEpisodesResponse.swift */,
+				41F2EC092AEC1F650049F39F /* RMGetAllLocationsResponse.swift */,
 			);
 			name = APIResponseTypes;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				41F2EC052AEC1E0C0049F39F /* RMLocationDetailViewController.swift in Sources */,
 				41B223012AB67C2D00C2E23C /* RMCharacter.swift in Sources */,
 				41F2EBF52AE978560049F39F /* RMSettingsView.swift in Sources */,
+				41F2EC0A2AEC1F650049F39F /* RMGetAllLocationsResponse.swift in Sources */,
 				41B223CA2AC89D3000C2E23C /* RMCharacterDetailViewViewModel.swift in Sources */,
 				41B223122AB7A5E500C2E23C /* RMEndpoint.swift in Sources */,
 				41B223062AB6852C00C2E23C /* RMCharacterViewController.swift in Sources */,
