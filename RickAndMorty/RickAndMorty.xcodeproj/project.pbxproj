@@ -61,6 +61,7 @@
 		41F2EBFB2AEBE1570049F39F /* RMLocationsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EBFA2AEBE1570049F39F /* RMLocationsViewViewModel.swift */; };
 		41F2EBFD2AEBE1B00049F39F /* RMLocationTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EBFC2AEBE1B00049F39F /* RMLocationTableViewCellViewModel.swift */; };
 		41F2EBFF2AEBE1F00049F39F /* RMLocationDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EBFE2AEBE1F00049F39F /* RMLocationDetailViewViewModel.swift */; };
+		41F2EC012AEBE27A0049F39F /* RMTableLoadingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC002AEBE27A0049F39F /* RMTableLoadingFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +121,7 @@
 		41F2EBFA2AEBE1570049F39F /* RMLocationsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationsViewViewModel.swift; sourceTree = "<group>"; };
 		41F2EBFC2AEBE1B00049F39F /* RMLocationTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		41F2EBFE2AEBE1F00049F39F /* RMLocationDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationDetailViewViewModel.swift; sourceTree = "<group>"; };
+		41F2EC002AEBE27A0049F39F /* RMTableLoadingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMTableLoadingFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				41F2EBF72AEBDC5E0049F39F /* RMLocationView.swift */,
+				41F2EC002AEBE27A0049F39F /* RMTableLoadingFooterView.swift */,
 			);
 			name = Locations;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				41B223E82AD62BBE00C2E23C /* RMEpisodeListViewViewModel.swift in Sources */,
 				41B223C32AC1E0B300C2E23C /* RMCharacterCollectionViewCellViewModel.swift in Sources */,
 				41B223EA2AD7494B00C2E23C /* RMGetAllEpisodesResponse.swift in Sources */,
+				41F2EC012AEBE27A0049F39F /* RMTableLoadingFooterView.swift in Sources */,
 				41B223F22ADA02E200C2E23C /* RMEpisodeInfoCollectionViewCellViewModel.swift in Sources */,
 				41B223EF2ADA028D00C2E23C /* RMEpisodeInfoCollectionViewCell.swift in Sources */,
 				41F2EBFF2AEBE1F00049F39F /* RMLocationDetailViewViewModel.swift in Sources */,
