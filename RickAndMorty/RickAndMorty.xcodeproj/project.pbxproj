@@ -64,6 +64,7 @@
 		41F2EC012AEBE27A0049F39F /* RMTableLoadingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC002AEBE27A0049F39F /* RMTableLoadingFooterView.swift */; };
 		41F2EC032AEBE2C40049F39F /* RMLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC022AEBE2C40049F39F /* RMLocationTableViewCell.swift */; };
 		41F2EC052AEC1E0C0049F39F /* RMLocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC042AEC1E0C0049F39F /* RMLocationDetailViewController.swift */; };
+		41F2EC082AEC1E770049F39F /* RMLocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC072AEC1E770049F39F /* RMLocationDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +127,7 @@
 		41F2EC002AEBE27A0049F39F /* RMTableLoadingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMTableLoadingFooterView.swift; sourceTree = "<group>"; };
 		41F2EC022AEBE2C40049F39F /* RMLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationTableViewCell.swift; sourceTree = "<group>"; };
 		41F2EC042AEC1E0C0049F39F /* RMLocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationDetailViewController.swift; sourceTree = "<group>"; };
+		41F2EC072AEC1E770049F39F /* RMLocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		41B222F62AB675D400C2E23C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				41F2EC062AEC1E540049F39F /* LocationsDetail */,
 				41F2EBF62AEBDC200049F39F /* Locations */,
 				41B223ED2ADA022900C2E23C /* EpisodeDetail */,
 				41B223E42AD5BC3300C2E23C /* Episodes */,
@@ -388,6 +391,14 @@
 			name = Locations;
 			sourceTree = "<group>";
 		};
+		41F2EC062AEC1E540049F39F /* LocationsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				41F2EC072AEC1E770049F39F /* RMLocationDetailView.swift */,
+			);
+			name = LocationsDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -493,6 +504,7 @@
 				41F2EBF22AE8AB100049F39F /* RMSettingsCellViewModel.swift in Sources */,
 				41B223DD2AD0C97400C2E23C /* RMCharacterEpisodeCollectionViewCellViewModel.swift in Sources */,
 				41B223102AB7A46A00C2E23C /* RMRequest.swift in Sources */,
+				41F2EC082AEC1E770049F39F /* RMLocationDetailView.swift in Sources */,
 				41B223E32AD57CA300C2E23C /* RMEpisodeDetailView.swift in Sources */,
 				41B2231E2ABD0E0A00C2E23C /* RMGetAllCharactersResponse.swift in Sources */,
 				41B223C12AC1DCA100C2E23C /* RMCharacterCollectionViewCell.swift in Sources */,
