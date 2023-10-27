@@ -84,21 +84,21 @@ final class RMCharacterInfoCollectionViewCellViewModel {
         var iconImage: UIImage? {
             switch self {
             case .status:
-                return UIImage(systemName: "bell")
+                return UIImage(systemName: "heart.fill")
             case .gender:
-                return UIImage(systemName: "")
+                return UIImage(systemName: "figure.dress.line.vertical.figure")
             case .type:
-                return UIImage(systemName: "")
+                return UIImage(systemName: "face.dashed")
             case .species:
-                return UIImage(systemName: "")
+                return UIImage(systemName: "person.fill.questionmark")
             case .origin:
-                return UIImage(systemName: "")
+                return UIImage(systemName: "mappin.circle")
             case .created:
-                return UIImage(systemName: "")
+                return UIImage(systemName: "clock")
             case .location:
-                return UIImage(systemName: "")
+                return UIImage(systemName: "map")
             case .episodeCount:
-                return UIImage(systemName: "")
+                return UIImage(systemName: "sum")
             }
         }
         
