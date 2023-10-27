@@ -63,6 +63,7 @@
 		41F2EBFF2AEBE1F00049F39F /* RMLocationDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EBFE2AEBE1F00049F39F /* RMLocationDetailViewViewModel.swift */; };
 		41F2EC012AEBE27A0049F39F /* RMTableLoadingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC002AEBE27A0049F39F /* RMTableLoadingFooterView.swift */; };
 		41F2EC032AEBE2C40049F39F /* RMLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC022AEBE2C40049F39F /* RMLocationTableViewCell.swift */; };
+		41F2EC052AEC1E0C0049F39F /* RMLocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EC042AEC1E0C0049F39F /* RMLocationDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +125,7 @@
 		41F2EBFE2AEBE1F00049F39F /* RMLocationDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationDetailViewViewModel.swift; sourceTree = "<group>"; };
 		41F2EC002AEBE27A0049F39F /* RMTableLoadingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMTableLoadingFooterView.swift; sourceTree = "<group>"; };
 		41F2EC022AEBE2C40049F39F /* RMLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationTableViewCell.swift; sourceTree = "<group>"; };
+		41F2EC042AEC1E0C0049F39F /* RMLocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +288,7 @@
 				41B223C52AC8982300C2E23C /* RMCharacterDetailViewController.swift */,
 				41B223DE2AD46EBA00C2E23C /* RMEpisodeDetailViewController.swift */,
 				41B223EB2AD8B29900C2E23C /* RMSearchViewController.swift */,
+				41F2EC042AEC1E0C0049F39F /* RMLocationDetailViewController.swift */,
 			);
 			name = Details;
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 				41B223D22AD0C82C00C2E23C /* RMCharacterPhotoCollectionViewCell.swift in Sources */,
 				41B2230C2AB6858400C2E23C /* RMSettingsViewController.swift in Sources */,
 				41B2230E2AB7A44C00C2E23C /* RMService.swift in Sources */,
+				41F2EC052AEC1E0C0049F39F /* RMLocationDetailViewController.swift in Sources */,
 				41B223012AB67C2D00C2E23C /* RMCharacter.swift in Sources */,
 				41F2EBF52AE978560049F39F /* RMSettingsView.swift in Sources */,
 				41B223CA2AC89D3000C2E23C /* RMCharacterDetailViewViewModel.swift in Sources */,
