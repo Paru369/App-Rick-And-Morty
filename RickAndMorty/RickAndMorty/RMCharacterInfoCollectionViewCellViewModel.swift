@@ -63,21 +63,23 @@ final class RMCharacterInfoCollectionViewCellViewModel {
         var tintColor: UIColor? {
             switch self {
             case .status:
-                return .blue
+                return  .systemIndigo
             case .gender:
-                return .systemPink
+                return  .systemIndigo
             case .type:
-                return .red
+                return .systemMint
             case .species:
-                return .purple
+                return .systemMint
             case .origin:
-                return .systemGreen
+                return .systemIndigo
             case .created:
-                return .magenta
+                return .systemMint
             case .location:
-                return .systemCyan
+                return .systemIndigo
             case .episodeCount:
-                return .cyan
+                return .systemMint
+                    
+                 
             }
         }
         

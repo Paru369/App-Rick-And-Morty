@@ -47,7 +47,7 @@ class RMCharacterListView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         translatesAutoresizingMaskIntoConstraints = false
-        backgroundColor = .systemRed
+        backgroundColor = .systemBackground
         addSubviews(collectionView, spinner)
         addConstraints()
         spinner.startAnimating()

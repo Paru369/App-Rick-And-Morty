@@ -22,13 +22,13 @@ final class RMEpisodeListViewViewModel: NSObject {
     private var isLoadingMoreCharacters = false
 
     private let borderColors: [UIColor] = [
-        .systemGreen,
-        .systemBlue,
-        .systemOrange,
-        .systemPink,
-        .systemPurple,
-        .systemRed,
-        .systemYellow,
+//        .systemGreen,
+//        .systemBlue,
+//        .systemOrange,
+//        .systemPink,
+//        .systemPurple,
+//        .systemRed,
+//        .systemYellow,
         .systemIndigo,
         .systemMint
     ]
