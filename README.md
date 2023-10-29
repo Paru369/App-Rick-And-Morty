@@ -3,23 +3,26 @@ Rick and Morty themed iOS app using Swift and UIKit
 
 ## ✅ Features
 📱 Characters,Locations and Episodes from Rick And Morty API  <br>
-🍿 Characters details
+🍿 Characters details<br>
 📺 Interface de usuário semelhante à da Netflix. <br>
 🎬 Listas de filmes populares e próximos. <br>
 🔍 Recurso de pesquisa. <br>
 🎥 Reprodução de trailers de filmes. 
+<br>
+<br>
 
+## 📱 Technologies and knowledges <br>
+- UIKit and SwiftUI<br>
+- MVVM <br>
+- API: https://rickandmortyapi.com/<br>
+- JSON to struct: https://app.quicktype.io/<br>
 <br>
-<br>
-## 📱 Technologies and knowledges 
-- UIKit and SwiftUI
-- MVVM 
-- API: https://rickandmortyapi.com/
-- JSON to struct: https://app.quicktype.io/
 
 ## 📲 Images
-<img align="center" width="200px" src="https://github.com/Paru369/App-UIKit-StoryBoard-XIB-ViewCodeDesafio_FInal_01-DIO-Santander/blob/main/images/iflix.gif">  <img align="center" width="200px" src="https://github.com/Paru369/App-UIKit-StoryBoard-XIB-ViewCodeDesafio_FInal_01-DIO-Santander/blob/main/images/iflix1.png">  <img align="center" width="200px" src="https://github.com/Paru369/App-UIKit-StoryBoard-XIB-ViewCodeDesafio_FInal_01-DIO-Santander/blob/main/images/iflix2.png">  <img align="center" width="200px" src="https://github.com/Paru369/App-UIKit-StoryBoard-XIB-ViewCodeDesafio_FInal_01-DIO-Santander/blob/main/images/iflix3.png">  <img align="center" width="200px" src="https://github.com/Paru369/App-UIKit-StoryBoard-XIB-ViewCodeDesafio_FInal_01-DIO-Santander/blob/main/images/iflix4.png">  <img align="center" width="200px" src="https://github.com/Paru369/App-UIKit-StoryBoard-XIB-ViewCodeDesafio_FInal_01-DIO-Santander/blob/main/images/iflix5.png"> 
-          
+<img align="center" width="200px" src="https://github.com/Paru369/App-Rick-And-Morty/blob/main/images/RMGif.gif"> <img align="center" width="200px" src="https://github.com/Paru369/App-Rick-And-Morty/blob/main/images/RM1.png"> 
+<img align="center" width="200px" src="https://github.com/Paru369/App-Rick-And-Morty/blob/main/images/RM2.png"> <img align="center" width="200px" src="https://github.com/Paru369/App-Rick-And-Morty/blob/main/images/RM3.png"> <img align="center" width="200px" src="https://github.com/Paru369/App-Rick-And-Morty/blob/main/images/RM4.png"> <img align="center" width="200px" src="https://github.com/Paru369/App-Rick-And-Morty/blob/main/images/RM5.png"> <img align="center" width="200px" src="https://github.com/Paru369/App-Rick-And-Morty/blob/main/images/RM6.png"> <img align="center" width="200px" src="https://github.com/Paru369/App-Rick-And-Morty/blob/main/images/RM7.png"> <img align="center" width="200px" src="https://github.com/Paru369/App-Rick-And-Morty/blob/main/images/RM8.png"> <img align="center" width="200px" src="https://github.com/Paru369/App-Rick-And-Morty/blob/main/images/RM9.png"> <img align="center" width="200px" src="https://github.com/Paru369/App-Rick-And-Morty/blob/main/images/RM10.png"> <img align="center" width="200px" src="https://github.com/Paru369/App-Rick-And-Morty/blob/main/images/RM11.png"> 
+<br>
+
 ## ☑️ Requirements
 
 - [XCode](https://developer.apple.com/xcode/)
