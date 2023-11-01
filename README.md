@@ -10,7 +10,6 @@ Rick and Morty themed iOS app using Swift and UIKit
 🎥 Reprodução de trailers de filmes. 
 <br>
 <br>
-
 ## 📱 Technologies and knowledges <br>
 - UIKit and SwiftUI<br>
 - MVVM <br>
